@@ -1,0 +1,12 @@
+# Tap for additional software
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+
+# Development tools
+brew "git" # https://git-scm.com/
+
+# Command line utilities
+brew "bat" # Better cat: https://github.com/sharkdp/bat
+brew "eza" # Better ls: https://eza.rocks/
+brew "tree"
+brew "jq"  # JSON processor: https://jqlang.org/
