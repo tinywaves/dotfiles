@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# shellcheck source=../utils/lib.sh
-source "$ROOT_DIR/utils/lib.sh"
+# shellcheck source=../utils/utils.sh
+source "$ROOT_DIR/utils/utils.sh"
 
 if ! is_macos; then
   die "This setup targets macOS only."
