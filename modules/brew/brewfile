@@ -1,14 +1,8 @@
 # Core
 brew "git"
 brew "gnupg"
-brew "zsh"
 
 # Shell tools
-brew "coreutils"
-brew "findutils"
-brew "gnu-sed"
-brew "gnu-tar"
-brew "grep"
 brew "wget"
 brew "curl"
 brew "jq"
@@ -19,8 +13,6 @@ brew "fd"
 brew "bat"
 brew "eza"
 brew "tree"
-brew "htop"
-brew "tmux"
 
 # Zsh plugins
 brew "zsh-autosuggestions"
