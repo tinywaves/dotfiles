@@ -1,0 +1,4 @@
+[submodule "templates/rime-config"]
+	path = templates/rime-config
+	url = https://github.com/tinywaves/rime-config
+	branch = main
