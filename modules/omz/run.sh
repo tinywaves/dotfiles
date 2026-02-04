@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# shellcheck source=../utils/lib.sh
-source "$ROOT_DIR/utils/lib.sh"
+# shellcheck source=../utils/utils.sh
+source "$ROOT_DIR/utils/utils.sh"
 
 if [[ -d "$HOME/.oh-my-zsh" ]]; then
   info "Oh My Zsh already installed."
