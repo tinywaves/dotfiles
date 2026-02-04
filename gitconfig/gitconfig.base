@@ -1,0 +1,14 @@
+# Base git config for all repos
+[user]
+  name = YOUR_NAME
+  email = YOUR_EMAIL
+[core]
+  editor = vim
+[pull]
+  rebase = false
+[init]
+  defaultBranch = main
+[merge]
+  conflictstyle = zdiff3
+[rerere]
+  enabled = true

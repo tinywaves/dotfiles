@@ -1,0 +1,6 @@
+# Personal/Open Source git config override
+[user]
+  name = PERSONAL_NAME
+  email = PERSONAL_EMAIL
+[commit]
+  gpgsign = true
