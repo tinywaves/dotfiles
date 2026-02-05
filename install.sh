@@ -14,6 +14,10 @@ run_module() {
 }
 
 run_module "$ROOT_DIR/modules/prereq/run.sh"
+# Ensure Homebrew is on PATH for subsequent modules, even when prereq ran in a subshell.
+if brew_prefix="$(brew_prefix 2>/dev/null)"; then
+  eval "$("$brew_prefix/bin/brew" shellenv)"
+fi
 run_module "$ROOT_DIR/modules/brew/run.sh"
 run_module "$ROOT_DIR/modules/omz/run.sh"
 run_module "$ROOT_DIR/modules/zshrc/run.sh"

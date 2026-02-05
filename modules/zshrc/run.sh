@@ -13,8 +13,13 @@ if [[ ! -f "$TEMPLATE_PATH" ]]; then
   warn "Place your Oh My Zsh template there or set OMZ_TEMPLATE to a file path."
 else
   if [[ -f "$TARGET_ZSHRC" ]]; then
-    cp "$TARGET_ZSHRC" "$BACKUP_ZSHRC"
-    info "Backed up existing .zshrc to $BACKUP_ZSHRC"
+    backup_path="$BACKUP_ZSHRC"
+    if [[ -f "$BACKUP_ZSHRC" ]]; then
+      timestamp="$(date +%Y%m%d-%H%M%S)"
+      backup_path="${BACKUP_ZSHRC}.${timestamp}"
+    fi
+    cp "$TARGET_ZSHRC" "$backup_path"
+    info "Backed up existing .zshrc to $backup_path"
   fi
   cp "$TEMPLATE_PATH" "$TARGET_ZSHRC"
   info "Applied Oh My Zsh template to $TARGET_ZSHRC"

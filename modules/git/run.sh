@@ -68,9 +68,9 @@ if ! grep -q "dotfiles includeIf" "$BASE_CONFIG"; then
   cat <<BLOCK >> "$BASE_CONFIG"
 
 # dotfiles includeIf
-[includeIf "gitdir:${PERSONAL_DIR}"]
+[includeIf "gitdir:${PERSONAL_DIR}/"]
   path = $PERSONAL_CONFIG
-[includeIf "gitdir:${WORK_DIR}"]
+[includeIf "gitdir:${WORK_DIR}/"]
   path = $WORK_CONFIG
 BLOCK
   info "Added includeIf blocks to base git config."
