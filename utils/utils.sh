@@ -19,6 +19,31 @@ die() {
   exit 1
 }
 
+prompt_value() {
+  local prompt="$1"
+  local default_value="${2:-}"
+  local value=""
+
+  while [[ -z "$value" ]]; do
+    if [[ -n "$default_value" ]]; then
+      read -r -p "$prompt" value
+      if [[ -z "$value" ]]; then
+        value="$default_value"
+      fi
+    else
+      read -r -p "$prompt" value
+      if [[ -z "$value" ]]; then
+        warn "Value is required."
+      fi
+    fi
+  done
+  printf '%s' "$value"
+}
+
+escape_sed_replacement() {
+  printf '%s' "$1" | sed -e 's/[\\&|]/\\&/g'
+}
+
 require_command() {
   command -v "$1" >/dev/null 2>&1 || die "Missing required command: $1"
 }

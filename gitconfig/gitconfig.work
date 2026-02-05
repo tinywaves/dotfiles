@@ -1,6 +1,0 @@
-# Work git config override
-[user]
-  name = WORK_NAME
-  email = WORK_EMAIL
-[commit]
-  gpgsign = true
