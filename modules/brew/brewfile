@@ -17,6 +17,3 @@ brew "tree"
 # Zsh plugins
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
-
-# Node
-brew "nvm"
