@@ -60,6 +60,14 @@ Update `user.name` and `user.email` in:
 - `~/.config/git/config-work`
 - `~/.config/git/config-personal`
 
+### Rime Configuration
+
+Rime config files are installed from `templates/rime-config/` to `~/Library/Rime/`.
+
+After installation, deploy the configuration by:
+- Clicking the Squirrel icon in the menu bar → Select "Deploy"
+- Or run: `killall Squirrel && open -a Squirrel`
+
 ## Libraries & Tools Links
 
 - [Xcode Command Line Tools](https://developer.apple.com/downloads/)
@@ -88,6 +96,7 @@ Update `user.name` and `user.email` in:
 - `modules/omz/run.sh` (Oh My Zsh)
 - `modules/zshrc/run.sh` (template applied to `~/.zshrc`)
 - `modules/git/run.sh` (work/personal configs)
+- `modules/rime/run.sh` (Rime/Squirrel input method config)
 
 ## Notes
 

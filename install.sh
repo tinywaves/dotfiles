@@ -37,6 +37,7 @@ run_module "$ROOT_DIR/modules/brew/run.sh"
 run_module "$ROOT_DIR/modules/omz/run.sh"
 run_module "$ROOT_DIR/modules/zshrc/run.sh"
 run_module "$ROOT_DIR/modules/git/run.sh"
+run_module "$ROOT_DIR/modules/rime/run.sh"
 
 section "All Done"
 info "Installation finished. Restart your terminal or run: exec zsh"
