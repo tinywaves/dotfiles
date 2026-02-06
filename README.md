@@ -1,4 +1,4 @@
-# macOS Dotfiles Bootstrap
+# dotfiles
 
 Modular macOS bootstrap dotfiles for Homebrew, Oh My Zsh, Zsh config, and Git work/personal split.
 
@@ -8,11 +8,6 @@ Modular macOS bootstrap dotfiles for Homebrew, Oh My Zsh, Zsh config, and Git wo
 - Oh My Zsh + common plugins
 - Git configs split by directory (work vs personal) with automatic includeIf
 - Work git `user.name` and `user.email` are prompted on first install
-
-## Prerequisites
-
-- [Initialize GPG](https://www.tinywaves.site/articles/commit-with-gpg) (generate/import key and ensure `gpg` works in terminal)
-- Download and install the [Rime](https://rime.im/) input method
 
 ## Quick Start
 
@@ -88,6 +83,7 @@ After installation, deploy the configuration by:
 - [eza](https://github.com/eza-community/eza)
 - [tree](https://linux.die.net/man/1/tree)
 - [Rime](https://rime.im/)
+- [Rime Ice](https://dvel.me/posts/rime-ice/)
 
 ## Modules
 

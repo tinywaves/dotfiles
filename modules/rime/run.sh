@@ -12,6 +12,21 @@ SYNC_DIR="$RIME_CONFIG_DIR/sync"
 # Create Rime config directory if it doesn't exist
 mkdir -p "$RIME_CONFIG_DIR"
 
+# Clear existing contents if directory exists and is not empty
+if [[ -d "$RIME_CONFIG_DIR" ]]; then
+  find "$RIME_CONFIG_DIR" -mindepth 1 -delete 2>/dev/null || true
+fi
+
+# Install rime-ice using plum
+section "Install rime-ice via plum"
+PLUM_DIR="$RIME_CONFIG_DIR/plum"
+rm -rf "$PLUM_DIR"
+git clone --depth=1 https://github.com/rime/plum
+bash "$PLUM_DIR/rime-install" iDvel/rime-ice:others/recipes/full
+
+# Delete all non-folder files in RIME_CONFIG_DIR
+find "$RIME_CONFIG_DIR" -maxdepth 1 -type f -delete
+
 # Check if template directory exists
 if [[ ! -d "$TEMPLATE_DIR" ]]; then
   die "Rime template directory not found: $TEMPLATE_DIR. Run: make submodule-sync"
