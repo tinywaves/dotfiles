@@ -42,16 +42,19 @@ OMZ_TEMPLATE=/path/to/your/.zshrc ./install.sh
 ### Git Work/Personal Split
 
 The base config is installed at `~/.config/git/config` and includes:
+
 - `~/.config/git/config-work` for work repos
 - `~/.config/git/config-personal` for personal/open-source repos
 
 Defaults:
+
 - Work dir: `~/Developer/work`
 - Personal dir: `~/Developer/personal`
 
 First install will prompt for work `user.name` and `user.email`.
 
 Update `user.name` and `user.email` in:
+
 - `~/.config/git/config-work`
 - `~/.config/git/config-personal`
 
@@ -60,6 +63,7 @@ Update `user.name` and `user.email` in:
 Rime config files are installed from `templates/rime-config/` to `~/Library/Rime/`.
 
 After installation, deploy the configuration by:
+
 - Clicking the Squirrel icon in the menu bar → Select "Deploy"
 - Or run: `killall Squirrel && open -a Squirrel`
 
@@ -84,6 +88,7 @@ After installation, deploy the configuration by:
 - [tree](https://linux.die.net/man/1/tree)
 - [Rime](https://rime.im/)
 - [Rime Ice](https://dvel.me/posts/rime-ice/)
+- [FiraCode](https://github.com/tonsky/FiraCode)
 
 ## Modules
 

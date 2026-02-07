@@ -17,3 +17,6 @@ brew "tree"
 # Zsh plugins
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+
+# Fonts
+cask "font-fira-code"
