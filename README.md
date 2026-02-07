@@ -13,10 +13,37 @@ Modular macOS bootstrap dotfiles for Homebrew, Oh My Zsh, Zsh config, and Git wo
 
 1. Clone this repo (recommended path: `~/.dotfiles`).
 2. Put your Oh My Zsh template at `templates/.zshrc` or set `OMZ_TEMPLATE`.
-3. Run:
+3. Run one of the following:
+
+### Option 1: Full Installation
+
+Run all modules in order:
 
 ```bash
 ./install.sh
+```
+
+### Option 2: Run Individual Modules Directly
+
+Each module can be run independently:
+
+```bash
+./modules/prereq/run.sh    # Install prerequisites (Xcode, Homebrew)
+./modules/brew/run.sh      # Install Homebrew packages
+./modules/omz/run.sh       # Install Oh My Zsh
+./modules/zshrc/run.sh     # Setup Zsh configuration
+./modules/git/run.sh       # Setup Git configuration
+./modules/rime/run.sh      # Setup Rime input method
+```
+
+### Option 3: Run via Module Entry Script
+
+Use the unified module runner:
+
+```bash
+./run-module.sh brew       # Run a specific module
+./run-module.sh --list     # List all available modules
+./run-module.sh --help     # Show help
 ```
 
 ## Directory Layout
