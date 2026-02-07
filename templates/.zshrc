@@ -116,6 +116,10 @@ if command -v brew >/dev/null 2>&1; then
 fi
 source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
 
+# nvm (Node Version Manager)
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 plugins=(git web-search jsontools z vi-mode)
 
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)

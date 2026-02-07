@@ -8,6 +8,7 @@ Modular macOS bootstrap dotfiles for Homebrew, Oh My Zsh, Zsh config, and Git wo
 - Oh My Zsh + common plugins
 - Git configs split by directory (work vs personal) with automatic includeIf
 - Work git `user.name` and `user.email` are prompted on first install
+- Node.js environment via nvm (includes Node.js LTS, yarn, pnpm)
 
 ## Quick Start
 
@@ -33,6 +34,7 @@ Each module can be run independently:
 ./modules/omz/run.sh       # Install Oh My Zsh
 ./modules/zshrc/run.sh     # Setup Zsh configuration
 ./modules/git/run.sh       # Setup Git configuration
+./modules/nodejs/run.sh    # Setup Node.js environment (nvm, yarn, pnpm)
 ./modules/rime/run.sh      # Setup Rime input method
 ```
 
@@ -116,6 +118,11 @@ After installation, deploy the configuration by:
 - [Rime](https://rime.im/)
 - [Rime Ice](https://dvel.me/posts/rime-ice/)
 - [FiraCode](https://github.com/tonsky/FiraCode)
+- [LxgwWenKai](https://github.com/lxgw/LxgwWenKai)
+- [nvm](https://github.com/nvm-sh/nvm)
+- [Node.js](https://nodejs.org/)
+- [yarn](https://yarnpkg.com/)
+- [pnpm](https://pnpm.io/)
 
 ## Modules
 
@@ -124,6 +131,7 @@ After installation, deploy the configuration by:
 - `modules/omz/run.sh` (Oh My Zsh)
 - `modules/zshrc/run.sh` (template applied to `~/.zshrc`)
 - `modules/git/run.sh` (work/personal configs)
+- `modules/nodejs/run.sh` (nvm + Node.js LTS + yarn + pnpm)
 - `modules/rime/run.sh` (Rime/Squirrel input method config)
 
 ## Notes
