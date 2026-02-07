@@ -139,3 +139,5 @@ gc() {
 }
 
 export GPG_TTY=$(tty)
+
+bindkey -e

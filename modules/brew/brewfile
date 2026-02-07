@@ -20,3 +20,4 @@ brew "zsh-syntax-highlighting"
 
 # Fonts
 cask "font-fira-code"
+cask "font-lxgw-wenkai"
