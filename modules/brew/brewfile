@@ -19,5 +19,5 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 # Fonts
-cask "font-fira-code"
+cask "font-monaspace"
 cask "font-lxgw-wenkai"
