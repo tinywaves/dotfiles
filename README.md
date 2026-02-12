@@ -117,7 +117,7 @@ After installation, deploy the configuration by:
 - [tree](https://linux.die.net/man/1/tree)
 - [Rime](https://rime.im/)
 - [Rime Ice](https://dvel.me/posts/rime-ice/)
-- [FiraCode](https://github.com/tonsky/FiraCode)
+- [Monaspace](https://monaspace.githubnext.com/)
 - [LxgwWenKai](https://github.com/lxgw/LxgwWenKai)
 - [nvm](https://github.com/nvm-sh/nvm)
 - [Node.js](https://nodejs.org/)
