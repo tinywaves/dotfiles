@@ -20,5 +20,5 @@ brew "zsh-syntax-highlighting"
 
 # Fonts
 cask "font-monaspace"
-cask "font-lxgw-wenkai"
+cask "font-source-han-sans-vf"
 cask "font-linux-biolinum"
